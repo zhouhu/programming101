@@ -1,0 +1,70 @@
+.light{
+    display: none;
+}
+body{
+    background-color: gold;
+}
+#light{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 50px;
+}
+#light img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+#switch-container{
+    content: "";
+    display: table;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.column{
+    float: left;
+    width: 25%;
+}
+img.switch{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#run-my-code{
+    margin-top:20px;
+    width: 100%;
+}
+#my-code-input{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 200px;
+}
+#run-my-code-btn{
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#keyboard-control{
+    width: 100%;
+}
+#keyboard-input{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}

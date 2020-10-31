@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light and Switches</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body onload="light_logic()">
+<audio id="click-sound" src="../assets/audio/click.ogg"></audio>
+
+<div id="house">
+  <div id="light">
+    <img class="light" id="img-light-off" src="../assets/img/bulb_off.png">
+    <img class="light" id="img-light-on" src="../assets/img/bulb_on.png">
+  </div>
+  <div id="switch-container">
+    <div class="column" id="switch-A" onclick="click_switch('A')">
+      <img class="switch" id="img-switch-up-A" src="../assets/img/switch_up_A.png">
+      <img class="switch" id="img-switch-down-A" src="../assets/img/switch_down_A.png">
+    </div>
+    <div class="column" id="switch-B" onclick="click_switch('B')">
+      <img class="switch" id="img-switch-up-B" src="../assets/img/switch_up_B.png">
+      <img class="switch" id="img-switch-down-B" src="../assets/img/switch_down_B.png">
+    </div>
+    <div class="column" id="switch-C" onclick="click_switch('C')">
+      <img class="switch" id="img-switch-up-C" src="../assets/img/switch_up_C.png">
+      <img class="switch" id="img-switch-down-C" src="../assets/img/switch_down_C.png">
+    </div>
+    <div class="column" id="switch-D" onclick="click_switch('D')">
+      <!-- placeholder for switch D   -->
+      <!--      <img class="switch" id="img-switch-up-D" src="../assets/img/switch_up_D.png">-->
+      <!--      <img class="switch" id="img-switch-down-D" src="../assets/img/switch_down_D.png">-->
+    </div>
+  </div>
+</div>
+
+<div id="keyboard-control">
+  <input id="keyboard-input" value="click here then press A a B b C c D d on keyboard to control the switches"
+         autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+</div>
+
+<div id="run-my-code">
+  <textarea id="my-code-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  //input your code here, e.g.
+    if(switch_A.isUp)
+      light.on();
+    else
+      light.off();
+  </textarea>
+  <button id="run-my-code-btn" type="button" onclick="run_my_code()">Run My Code</button>
+</div>
+
+<script src="../assets/js/light-switch-demo.js"></script>
+<script src="light-switch-prepare.js"></script>
+<script src="light-switch-logic-3.js"></script>
+
+</body>
+</html>
