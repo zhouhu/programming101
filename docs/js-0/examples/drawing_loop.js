@@ -1,7 +1,7 @@
 // use_html: drawing.html
 function drawing() {
   color("red");
-  var count = 0;
+  let count = 0;
   while (count < 20) {
     circle(count * 10, 0, 4);
     count = count + 1;

@@ -2,7 +2,7 @@
 function branch(thickness) {
   // Give the branches individuality by randomizing their length
   // (between 2 and 5 times their thickness)
-  var height = thickness * (2 + Math.random() * 3);
+  let height = thickness * (2 + Math.random() * 3);
   // Draw this branch
   color("black");
   box(-thickness / 2, height, thickness, height);
